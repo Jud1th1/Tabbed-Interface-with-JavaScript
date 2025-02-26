@@ -38,10 +38,24 @@ p {
 }
 
 #tabs> div{
-	display: none;
 	padding: 15px;
 	background: #EAEAEA;
+	/*Adding animation for tabs */
+	transition: opacity 200ms linear;
 }
+
+/*Adding css for active tab when clicked on*/
+#tabs.active{
+	background: #eaeaea;
+	color: #333;
+}
+
+/* Our helper functions&css */
+#tabs .hidden {display: none;}
+#tabs .visible {display: block;}
+#tabs .visuallyhidden {opacity: 0;}
+/*Final CSS edits complete*/
+
 
 #tabs> div:first-of-type{
 	display: block;
