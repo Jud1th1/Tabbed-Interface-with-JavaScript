@@ -8,8 +8,8 @@
     } */
 
     //This does the same thing but is easier to read:   
-    tabs.forEach(function(tab){
-        tab.addEventListener('click', selectTab)
+    tabs.forEach(tab=>{ // => replaces function and if you are passing one var you can use one set of ()
+        tab.addEventListener('click', selectTab);
     });
 
     function selectTab(event){
@@ -20,7 +20,9 @@
         } */
 
         //easier code:
-        tabs.forEach(function)
+        tabs.forEach(tab => {
+            tab.removeAttribute('class');
+        });
 
         event.target.className = "active";
 
