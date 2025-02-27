@@ -45,7 +45,7 @@ p {
 }
 
 /*Adding css for active tab when clicked on*/
-#tabs.active{
+#tabs .active{
 	background: #eaeaea;
 	color: #333;
 }
@@ -57,7 +57,9 @@ p {
 /*Final CSS edits complete*/
 
 
-#tabs> div:first-of-type{
+
+
+/* #tabs> div:first-of-type{
 	display: block;
 	background: #EAEAEA;
 }
@@ -70,4 +72,4 @@ p {
 p{
 	line-height: 1.5em;
 	margin-bottom: 1em;
-}
+} */
